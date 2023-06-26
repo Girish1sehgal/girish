@@ -7,7 +7,7 @@ pipeline {
 				checkout scm
 			}
 		}
-	}
+	
 
 	stage('Client Tests') {
 	steps {
