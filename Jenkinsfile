@@ -4,7 +4,7 @@ pipeline {
     stage('test') {
       steps {
         withGradle() {
-          sh 'git --vers'
+          sh 'gggg'
         }
 
       }
