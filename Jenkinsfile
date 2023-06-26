@@ -3,12 +3,6 @@ pipeline {
 
 	tools {nodejs "mernstack"}
 
-	stages {
-		stage('Checkout') {
-			steps {
-				checkout scm
-			}
-		}
 	
 
 	stage('Client Tests') {
