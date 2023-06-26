@@ -1,11 +1,11 @@
 pipeline {
-  agent any
-  stages {
-    stage('test') {
-      steps {
-        sh 'node -v'
-      }
-    }
+	agent any
 
-  }
+	stages {
+		stage('Checkout') {
+			steps {
+				checkout scm
+			}
+		}
+	}
 }
