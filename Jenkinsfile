@@ -3,12 +3,16 @@ pipeline {
   stages {
     stage('test') {
       steps {
-        withGradle() {
-          sh 'gggg'
+        sh '''stage(\'Client Tests\') {
+	steps {
+		dir(\'client\') {
+			sh \'npm install\'
+			sh \'npm test\'
+		}
+	}
+}'''
         }
-
       }
-    }
 
+    }
   }
-}
