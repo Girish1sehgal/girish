@@ -1,8 +1,11 @@
-stage('Client Tests') {
-	steps {
-		dir('node-express-hello-world') {
-			sh 'npm install'
-			sh 'npm test'
+pipeline {
+	agent any
+
+	stages {
+		stage('Checkout') {
+			steps {
+				checkout scm
+			}
 		}
 	}
 }
