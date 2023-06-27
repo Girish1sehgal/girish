@@ -1,8 +1,1 @@
-node {
-	stage('build') {
-	echo "build"
-}
-stage('Test') {
-	echo "Test"
-}
-}
+sh 'apt-get update'
