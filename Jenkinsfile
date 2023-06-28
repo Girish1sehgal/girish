@@ -9,7 +9,7 @@ pipeline {
 		}
 		stage('Client Tests') {
 			steps {
-				dir('client') {
+				dir('sample-node-project') {
 					sh 'npm install'
 					sh 'npm test'
 				}
